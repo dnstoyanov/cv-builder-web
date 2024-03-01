@@ -10,7 +10,7 @@ const App = () => {
       </h2>
 
       <h2 className="font-regular text-red-600 text-center">
-        Starting new project with Vite and React
+        Starting new project with Vite and React after transfering the ownership
       </h2>
     </div>
   );
