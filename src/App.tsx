@@ -10,7 +10,7 @@ const App = () => {
       </h2>
 
       <h2 className="font-regular text-red-600 text-center">
-        Starting new project
+        Starting new project with Vite and React
       </h2>
     </div>
   );
