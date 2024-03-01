@@ -6,7 +6,7 @@ const App = () => {
       </h1>
 
       <h2 className="font-regular text-red-600 text-center">
-        Testing Tailwind and Vite
+        Testing Tailwind and Vite Just for the test
       </h2>
     </div>
   );
