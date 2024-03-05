@@ -1,8 +1,19 @@
 import LayoutModal from "@/components/Modal/LayoutModal";
 import { Avatar } from "@mui/material";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <section>
       <div className="flex justify-center items-center">
@@ -20,6 +31,16 @@ export default function Home() {
           Builder
         </Link>
       </div>
+
+      <div className="flex justify-center">
+        <button
+          onClick={handleOpenModal}
+          className="transition ease-in-out delay-100 bg-blue-500 px-4 py-2 rounded-lg text-white hover:bg-blue-600"
+        >
+          Open Modal
+        </button>
+      </div>
+      <LayoutModal open={modalOpen} handleClose={handleCloseModal} />
     </section>
   );
 }
