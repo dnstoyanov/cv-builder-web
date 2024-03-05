@@ -1,4 +1,3 @@
-import LayoutModal from "@/components/Modal/LayoutModal";
 import { Avatar } from "@mui/material";
 import Link from "next/link";
 
@@ -18,6 +17,15 @@ export default function Home() {
           href="/builder"
         >
           Builder
+        </Link>
+      </div>
+
+      <div className="flex justify-center">
+        <Link
+          className="transition ease-in-out delay-100 bg-blue-500 px-4 py-2 rounded-lg text-white hover:bg-blue-600"
+          href="/home"
+        >
+          Home
         </Link>
       </div>
     </section>
